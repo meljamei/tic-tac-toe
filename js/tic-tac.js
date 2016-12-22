@@ -1,18 +1,10 @@
 var isPlayer1 = true;
-var computer = "o"
-var player1 = "x"
-var computerMove;
+var player1 = 1;
+
 
 var checkForWinner = function () {
 
-
   // Refactord to a function
-  var indicateTheWinnerIsO = function(){
-    //alert(input + ' wins');
-
-  }
-
-
 
   if ($('#a .x, #b .x, #c .x').length === 3) {
     //$('#winner').show();
@@ -124,11 +116,7 @@ $(document).ready(function(){
       // }
       // setTimeout(waves, 10); // 1000 MilliSeconds
   })
-var whoIsWinner = function (){
-]
 
-  }
-}
 
     // // var ticBox = ['#a','#b', '#c', '#d', '#e', '#f', '#g', '#h', '#z'];
     // //
