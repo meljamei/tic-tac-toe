@@ -1,6 +1,7 @@
 var isPlayer1 = true;
-var player1 = 1;
-var div = $('div');
+var computer = "o"
+var player1 = "x"
+var computerMove;
 
 var checkForWinner = function () {
 
@@ -14,55 +15,71 @@ var checkForWinner = function () {
 
 
   if ($('#a .x, #b .x, #c .x').length === 3) {
-    $('#a, #b, #c');
+    //$('#winner').show();
+    $('#winner').fadeIn(500).delay(4000).fadeOut(3000);
+
 
   } else if ($('#a .o, #b .o, #c .o').length === 3) {
     //alert('O wins');
-    indicateTheWinnerIsO();
+    $('#winner').fadeIn(500).delay(4000).fadeOut(3000);
+
 
   } else if ($('#d .x, #e .x, #f .x').length === 3) {
     //alert('X wins');
-    indicateTheWinner('x');
+    $('#winner').fadeIn(500).delay(4000).fadeOut(3000);
 
 
   } else if ($('#d .o, #e .o, #f .o').length === 3) {
     //alert('O wins');
+    $('#winner').fadeIn(500).delay(4000).fadeOut(3000);
 
   } else if ($('#g .o, #h .o, #z .o').length === 3) {
     //alert('O wins');
+    $('#winner').fadeIn(500).delay(4000).fadeOut(3000);
 
   } else if ($('#g .x, #h .x, #z .x').length === 3) {
     //alert('X wins');
+    $('#winner').fadeIn(500).delay(4000).fadeOut(3000);
 
   } else if ($('#a .x, #e .x, #z .x').length === 3) {
     //alert('X wins');
+    $('#winner').fadeIn(500).delay(4000).fadeOut(3000);
 
   } else if ($('#c .o, #e .o, #g .o').length === 3) {
     //alert('O wins');
+    $('#winner').fadeIn(500).delay(4000).fadeOut(3000);
 
   } else if ($('#a .o, #e .o, #z .o').length === 3) {
     //alert('O wins');
+    $('#winner').fadeIn(500).delay(4000).fadeOut(3000);
 
   } else if ($('#c .x, #e .x, #g .x').length === 3) {
     //alert('X wins');
+    $('#winner').fadeIn(500).delay(4000).fadeOut(3000);
 
   } else if ($('#a .x, #d .x, #g .x').length === 3) {
     //alert('X wins');
+    $('#winner').fadeIn(500).delay(4000).fadeOut(3000);
 
   } else if ($('#a .o, #d .o, #g .o').length === 3) {
     //alert('O wins');
+    $('#winner').fadeIn(500).delay(4000).fadeOut(3000);
 
   } else if ($('#b .x, #e .x, #h .x').length === 3) {
     //alert('X wins');
+    $('#winner').fadeIn(500).delay(4000).fadeOut(3000);
 
   } else if ($('#b .o, #e .o, #h .o').length === 3) {
     //alert('O wins');
+    $('#winner').fadeIn(500).delay(4000).fadeOut(3000);
 
   } else if ($('#c .x, #f .x, #z .x').length === 3) {
     //alert('X wins');
+    $('#winner').fadeIn(500).delay(4000).fadeOut(3000);
 
   } else if ($('#c .o, #f .o, #z .o').length === 3) {
     //alert('O wins');
+    $('#winner').fadeIn(500).delay(4000).fadeOut(3000);
 
   }
 
@@ -72,6 +89,7 @@ var checkForWinner = function () {
 $(document).ready(function(){
   console.log('Hello');
   $('#wave').hide();
+  $('#winner').hide();
   //if playe1 click on button player1 circle will be chosen
   //$(':button').css('background-color', '#77C6E0');
 
@@ -94,19 +112,23 @@ $(document).ready(function(){
   $('#reset').on('click', function(){
     $('.box').empty();
 
-
+      $('#wave').fadeIn(500).delay(500).fadeOut(2000);
       // Show & hide of the Waves
-      function waves(){
-        $('#wave').show();
-
-          function wavesOut(){
-            $('#wave').fadeOut();
-          }
-          setTimeout(wavesOut, 2000);
-      }
-      setTimeout(waves, 10); // 1000 MilliSeconds
+      // function waves(){
+      //   $('#wave').show();
+      //
+      //     function wavesOut(){
+      //       $('#wave').fadeOut();
+      //     }
+      //     setTimeout(wavesOut, 2000);
+      // }
+      // setTimeout(waves, 10); // 1000 MilliSeconds
   })
+var whoIsWinner = function (){
+]
 
+  }
+}
 
     // // var ticBox = ['#a','#b', '#c', '#d', '#e', '#f', '#g', '#h', '#z'];
     // //
