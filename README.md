@@ -9,8 +9,14 @@ The game is built in HTML, CSS, JS & jQuery. I have started to create the game w
 
 
 
-### You can play the [game](https://meljamei.github.io/tic-tac-toe/) here.
+ You can play the [game](https://meljamei.github.io/tic-tac-toe/) here.
 
 
-### Strategy   
+### Background  
 I Have wrote the steps on a paper and made a map first. Then started to built it in javaScript.
+I spend one day on mapping and 1-2 days on HTML and CSS to style my page. The next step was working on javascript and jQuery to make connection between the design and buttons. My biggest problem was I did not know how to start.   
+
+### Future releases   
+- I will use AI
+- I will upload the game on firebase
+- I will make the game responsive
